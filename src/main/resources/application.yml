@@ -1,0 +1,30 @@
+server:
+  port: 8888
+spring:
+  mvc:
+#    static-path-pattern: /sdms-images/**
+    pathmatch:
+      matching-strategy: ant_path_matcher
+#  web:
+#    resources:
+#      static-locations: file:D://workspace//Student-Dormitory-Management-System//picture-path
+
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_sdms?useSSL=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: false
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 1000MB
+
+
+picture:
+  path: D:\workspace\Student-Dormitory-Management-System\picture-path

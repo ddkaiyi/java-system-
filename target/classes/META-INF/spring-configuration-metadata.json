@@ -1,0 +1,18 @@
+{
+  "groups": [
+    {
+      "name": "picture",
+      "type": "com.sdms.config.PictureConfig",
+      "sourceType": "com.sdms.config.PictureConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "picture.path",
+      "type": "java.lang.String",
+      "description": "The local absolute path where the image is stored.",
+      "sourceType": "com.sdms.config.PictureConfig"
+    }
+  ],
+  "hints": []
+}
